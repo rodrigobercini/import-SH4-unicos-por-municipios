@@ -1,3 +1,4 @@
+# Access https://rpubs.com/rbercini/hs4-by-RS-municipality to check the interactive plot
 library(dplyr)
 library(openxlsx)
 library(ggplot2)
@@ -5,7 +6,7 @@ library(ggdark)
 library(plotly)
 library(readr)
 
-setwd("C:/Users/Andréa/Desktop/Programming/International Trade/")
+setwd("C:/Users/AndrÃ©a/Desktop/Programming/International Trade/")
 df <- read.csv('By County and HS4/IMP/IMP_2019_MUN.csv', sep=';')
 municip <- read.xlsx('1_County_Codes.xlsx')
 UFs <- read_delim("Brasil UFs.csv", ";", escape_double = FALSE, trim_ws = TRUE)
@@ -15,18 +16,18 @@ df <- df %>%
   group_by(CO_MUN) %>%
   summarise('SH4.Count'= n_distinct(SH4))
 
-df <- merge(df, municip[ , c("Nome_Município", "Nome_UF", 'Código.Município.Completo.(MDIC)', 'Nome_Mesorregião')], all=FALSE, by.x='CO_MUN', by.y='Código.Município.Completo.(MDIC)')
+df <- merge(df, municip[ , c("Nome_MunicÃ­pio", "Nome_UF", 'CÃ³digo.MunicÃ­pio.Completo.(MDIC)', 'Nome_MesorregiÃ£o')], all=FALSE, by.x='CO_MUN', by.y='CÃ³digo.MunicÃ­pio.Completo.(MDIC)')
 
 df <- merge(df, UFs, all=FALSE, by='Nome_UF')
 
-df$Mun_UF <- paste(df$Nome_Município, df$UF, sep='/')
+df$Mun_UF <- paste(df$Nome_MunicÃ­pio, df$UF, sep='/')
 
 df <- df[df$UF=='RS',]
 
 df <- head(df[order(df$SH4.Count, decreasing = TRUE),], 20)
 
-pl <- ggplot(df, aes(x = reorder(Nome_Município, -SH4.Count), y = SH4.Count)) +
-  geom_col(aes(fill=Nome_Mesorregião)) +
+pl <- ggplot(df, aes(x = reorder(Nome_MunicÃ­pio, -SH4.Count), y = SH4.Count)) +
+  geom_col(aes(fill=Nome_MesorregiÃ£o)) +
   dark_theme_light() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   coord_cartesian(ylim=c(150, 750)) +
