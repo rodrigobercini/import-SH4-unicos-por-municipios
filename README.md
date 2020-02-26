@@ -1,4 +1,4 @@
-# Brazil HS4 imports by municipalities
+# Brazil unique HS4 imports by municipalities
 Consolidating HS4 count imported by brazilian municipalities
 
 *The Harmonized Commodity Description and Coding System generally referred to as "Harmonized System" or simply "HS" is a multipurpose international product nomenclature developed by the World Customs Organization (WCO)."* 
