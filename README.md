@@ -7,6 +7,8 @@ Source: [WCO](http://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-
 
 ![WikiMedia](https://upload.wikimedia.org/wikipedia/commons/4/4d/HS_Hierarchy_Structure_Rice.jpg)
 
+Source: WikiMedia.
+
 The number of unique HS4 imported/exported can be used as a loose proxy for economic complexity. This code takes raw trade data as input and outputs the brazilian municipalities with most unique HS4 imported in a specific year. 
 
 # Data sources
