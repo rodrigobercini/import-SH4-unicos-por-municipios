@@ -6,8 +6,7 @@ library(plotly)
 library(readr)
 
 
-setwd("C:/Users/Andréa/Desktop/Programming/International Trade/")
-df <- read.csv('By County and HS4/IMP/IMP_2019_MUN.csv', sep=';')
+df <- read.csv('IMP_2019_MUN.csv', sep=';')
 municip <- read.xlsx('1_County_Codes.xlsx')
 UFs <- read_delim("Brasil UFs.csv", ";", escape_double = FALSE, trim_ws = TRUE)
 colnames(UFs) <- c('Nome_UF', 'UF', 'Region')
