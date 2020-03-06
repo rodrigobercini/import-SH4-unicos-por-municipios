@@ -1,4 +1,4 @@
-Find a English version of this README [here](https://github.com/rodrigobercinimartins/BR-unique-HS4-imports-by-municipalities/blob/master/EN_README.md).
+Find a English version of this README file [here](https://github.com/rodrigobercinimartins/BR-unique-HS4-imports-by-municipalities/blob/master/EN_README.md).
 
 # Importações de SH4 únicos por municípios brasileiros
 Consolidando SH4 únicos importados por municípios brasileiros
