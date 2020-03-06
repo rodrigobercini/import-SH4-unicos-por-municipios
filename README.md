@@ -13,11 +13,11 @@ Fonte: Invest Export Brasil.
 
 O número de SH4 únicos importados/exportados pode ser usar como uma variável proxy frouxa para complexidade econômica. O código deste repositório toma os dados brutos do MDIC por município e consolida os municípios com maior número de SH4 únicos importados em um ano específico.
 
-# Por que este código é necessário?
+## Por que este código é necessário?
 
 A partir do site do MDIC, só é possível extrair dados brutos contendo códigos de municípios, as tabelas não possuem nomes, estados ou regiões. O que o código faz é cruzar os dados brutos do MDIC com informações do IBGE, tornando possível uma análise mais completa das exportações/importações dos municípios.
 
-# Fontes/Dados necessários
+## Fontes/Dados necessários
 
 [Dados brutos de importações 2019](http://www.mdic.gov.br/balanca/bd/comexstat-bd/mun/IMP_2019_MUN.csv) O código em questão analisa dados de 2019. Consulte o [site oficial do MDIC](http://www.mdic.gov.br/index.php/comercio-exterior/estatisticas-de-comercio-exterior/base-de-dados-do-comercio-exterior-brasileiro-arquivos-para-download) para mais anos e para exportações. 
 
@@ -25,11 +25,11 @@ A partir do site do MDIC, só é possível extrair dados brutos contendo código
 
 [Abreviações dos estados e regiões](https://drive.google.com/open?id=1BZd6-M2IULN6qCVi7GU-GBZOMwFOBFvX)
 
-# Usos alternativos
+## Usos alternativos
 
 A análise deste repositório focou no número de SH4 importados por municípios, porém com as tabelas consolidadas obtidas (contendo valores, nomes de municípios e regiões), é possível analisar uma infinidade de tendências do comércio international dos municípios.
 
-# Gráficos
+## Gráficos
 
 Para acessar os gráficos interativos (em inglês), consulte:
 https://rpubs.com/rbercini/hs4_by_BR_municipality and https://rpubs.com/rbercini/hs4-by-RS-municipality.
