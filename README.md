@@ -5,19 +5,22 @@ Consolidating HS4 count imported by brazilian municipalities
 
 Source: [WCO](http://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx)
 
-![WikiMedia](https://upload.wikimedia.org/wikipedia/commons/4/4d/HS_Hierarchy_Structure_Rice.jpg)
+![Harmonized System](https://upload.wikimedia.org/wikipedia/commons/4/4d/HS_Hierarchy_Structure_Rice.jpg)
 
 Source: WikiMedia.
 
 The number of unique HS4 imported/exported can be used as a loose proxy for economic complexity. This code takes raw trade data as input and outputs the brazilian municipalities with most unique HS4 imported in a specific year. 
 
-# Data sources
+# Why is this code necessry?
 
-The code is analyzing import data from [2019](http://www.mdic.gov.br/balanca/bd/comexstat-bd/mun/IMP_2019_MUN.csv). Refer to the official [MDIC website](http://www.mdic.gov.br/index.php/comercio-exterior/estatisticas-de-comercio-exterior/base-de-dados-do-comercio-exterior-brasileiro-arquivos-para-download) for further data: 
+When extracting data from MDIC website, it's only possible to extract raw data regarding municipalities imports/exports, the spreasheets don't contain information such as municipalities names, states or regions. This code merges raw data from MDIC and municipalities data from IBGE (brazilian agency of statistics), making it possible to analyze the big picture regarding municipalities international trade.
 
-There were mismatches for about 1.000 municipalities regarding MDIC and IBGE databases. Through a series of Vlookups and general feature engineering, the spreadsheet below contains matching codes for MDIC and IBGE.
+# Data sources / Necessary files
 
-[Municipalities/states codes and names](https://drive.google.com/open?id=1FU_1V7yYW-jILYy-KPW7UgvtYfYU7jRk)
+[Municipalities import data 2019](http://www.mdic.gov.br/balanca/bd/comexstat-bd/mun/IMP_2019_MUN.csv). - This code analyzes data from 2019. Check the [MDIC website](http://www.mdic.gov.br/index.php/comercio-exterior/estatisticas-de-comercio-exterior/base-de-dados-do-comercio-exterior-brasileiro-arquivos-para-download) for further data.
+
+[Municipalities/states codes and names](https://drive.google.com/open?id=1FU_1V7yYW-jILYy-KPW7UgvtYfYU7jRk) - There were mismatches for about 1.000 municipalities regarding MDIC and IBGE databases. Through a series of Vlookups and general feature engineering, the spreadsheet below contains matching codes for MDIC and IBGE.
+
 
 [States abbreviations and regions](https://drive.google.com/open?id=1BZd6-M2IULN6qCVi7GU-GBZOMwFOBFvX)
 
