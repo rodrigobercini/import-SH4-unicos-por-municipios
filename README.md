@@ -25,6 +25,10 @@ A partir do site do MDIC, só é possível extrair dados brutos contendo código
 
 [Abreviações dos estados e regiões](https://drive.google.com/open?id=1BZd6-M2IULN6qCVi7GU-GBZOMwFOBFvX)
 
+# Usos alternativos
+
+A análise deste repositório focou no número de SH4 importados por municípios, porém com as tabelas consolidadas obtidas (contendo valores, nomes de municípios e regiões), é possível analisar uma infinidade de tendências do comércio international dos municípios.
+
 # Gráficos
 
 Para acessar os gráficos interativos (em inglês), consulte:
