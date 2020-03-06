@@ -21,8 +21,11 @@ When extracting data from MDIC website, it's only possible to extract raw data r
 
 [Municipalities/states codes and names](https://drive.google.com/open?id=1FU_1V7yYW-jILYy-KPW7UgvtYfYU7jRk) - There were mismatches for about 1.000 municipalities regarding MDIC and IBGE databases. Through a series of Vlookups and general feature engineering, the spreadsheet below contains matching codes for MDIC and IBGE.
 
-
 [States abbreviations and regions](https://drive.google.com/open?id=1BZd6-M2IULN6qCVi7GU-GBZOMwFOBFvX)
+# Alternativa analysis
+
+This repo focused on mesuring the number of unique HS4 imported by municipalities. However, the data obtained (containing municipalities names, values and regions) allows a myriad of analysis regarding the trends of international trade.
+
 
 # Plots
 
